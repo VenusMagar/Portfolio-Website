@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Blog</title>
+		<meta name="author" content="Venus Chhantel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script type="text/javascript" src="../js/script.js"></script>
+
+	</head>
+
+	<style>
+		/* Creating a class for a text style */
+		.textstyle1{
+			color: white;
+			font-size: 22px;
+		}
+
+		/* Creating a class for a second text style */
+		.textstyle2{
+			color: white;
+			font-size: 17px;
+		}
+
+		/* Creating a class for a third text style */
+		.textstyle3{
+			color: white;
+			font-size: 19px;
+		}
+
+		/* Creating a class for styling margin of right section of the main body */
+		.margin_content{
+			margin-top: 16px;
+			margin-bottom: 14px;
+		}
+
+		/* Creating a class for styling the margin for writing types of technologies */
+		.margin_types{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 30px;
+		}
+
+		/* Creating a class for styling the size of the image slider */
+		.img{
+			height: 500px;
+			width: 900px;
+		}
+
+		/* Creating a class for styling the display of image and caption */
+		.hide{
+			display: none;
+		}
+
+	</style>
+
+	<body onload="displayTime()">
+
+		<!-- Creating a wrapper -->
+		<div width=100%>
+			
+			<!-- Creating a header content -->
+			<header>
+
+				<!-- Div for logo -->
+				<div>
+					<img src="../images/logo.png" alt="Logo" width=100, height="90">
+				</div>
+
+				<!-- Creating navigation bar -->
+				<nav>
+					<ul>
+						<li>
+							<a href="../index.html">HOME</a>
+						</li>
+						<li>
+							<a href="../pages/page1.html">CV</a>
+						</li>
+						<li>
+							<a href="../pages/page2.html">BLOG</a>
+						</li>
+						<li>
+							<a href="../pages/page3.html">RESEARCH</a>
+						</li>
+						<li>
+							<a href="../pages/page4.html">CONTACT</a>
+						</li>
+					</ul>		
+				</nav>
+
+			</header>
+
+
+			<!-- For allocating the main content -->
+			<main>
+
+				<!-- Creating a div for main body to divide into 2 sections -->
+				<div class="body">
+
+					<!-- Div for side navigation section -->
+					<div class="side_nav">
+
+						<p id="time" align="center">Time</p>
+
+						<h1 align="center">JUMP TO:</h1>
+
+						<!-- Creating a div for side navigation -->
+						<div align="center">
+							<nav>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 40px; padding-right: 40px;" href="#">TECHNOLOGY</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 71px; padding-right: 71px;" href="#nav_types">TYPES</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" href="#nav_positives">POSITIVE IMPACTS</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" href="#nav_negatives">NEGATIVE IMPACTS</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 22px; padding-right: 22px;" href="#nav_verdicts">OVERALL VERDICT</a>
+								</div>
+							</nav>
+			
+						</div>
+					</div>
+
+
+					<!-- Creating a div for main body content -->
+					<div style="width: 100%; height: 3240px; border-left: 1px solid white;">
+
+
+						<!-- Creating a div for technology -->
+						<div class="box" style="margin-top: 20px;">
+							<h1 align="center" class="textstyle1"><u>Technology</u></h1>
+							
+							<!-- Creating a div for explanation of technology -->	
+							<div class="margin_content">
+
+								<p id="nav_types" class="textstyle2">We, humans, are integrating with technologies more and more every day. We can find technology everywhere; in education, business, industries, medicine, the military, and even in our daily lives and it's incredible. Most of us may think, the electrical gadgets or very complex things as technology. But, we are wrong because even a simple wheel is an early human technology. So, what exactly is technology? Technology is simply the system of problem-solving and practical ideas or knowledge to create tools and gadgets. And, the tools and gadgets created with the use of technology are known as applied technology. Technology is derived from two Greek words i.e., "techne" and "logos". Techne means the knowledge and skill to craft something and logos mean the study. We all are deeply connected with the technologies.</p>
+
+							</div>
+							
+						</div>
+
+						<!-- Creating a div for types of technologies -->
+						<div class="box">
+							<h1 align="center" class="textstyle1"><u>Types Of Technologies</u></h1>
+
+							<!-- Creating a div for images and caption -->
+							<div class="margin_content">
+								
+								<!-- Div for images -->
+								<div align="center" style="margin-top: 10px; margin-bottom: 10px;">
+									<img id="img1" class="img" style="display: block;" src="../images/CommunicationTechnology.jpg" alt="Communication technology image">
+									<img id="img2" class="img hide" src="../images/MedicalTechnology.jpg" alt="Medical Technology image" >
+									<img id="img3" class="img hide" src="../images/MilitaryTechnology.jpg" alt="Military Technology image" > 
+									<img id="img4" class="img hide" src="../images/InformationTechnology.jpg" alt="Information Technology image" > 
+									<img id="img5" class="img hide" src="../images/EntertainmentTechnology.jpg" alt="Entertainment Technology image" >
+									<img id="img6" class="img hide" src="../images/ArchitectureTechnology.jpg" alt="Architecture Technology image" >
+									<img id="img7" class="img hide" src="../images/EducationTechnology.jpg" alt="Education Technology image" >
+									<img id="img8" class="img hide" src="../images/ProductivityTechonology.jpg" alt="Productivity Technology image" >
+									<img id="img9" class="img hide" src="../images/AssistiveTechnology.jpg" alt="Assistive Technology image" >
+								</div>
+
+								<p id="caption" class="textstyle2" align="center">Communication Technology</p>
+
+								<!-- Creating a div for next image button -->
+								<div align="center" style="margin-bottom: 20px; margin-top: 10px;">
+									<button onclick="toggle()" class="button">Next Image</button>
+								</div>
+
+								<!-- Adding javascript logic -->
+								<script type="text/javascript">
+									function toggle()
+									{
+										//Initializing
+										var image1 = document.getElementById('img1');
+										var image2 = document.getElementById('img2');
+										var image3 = document.getElementById('img3');
+										var image4 = document.getElementById('img4');
+										var image5 = document.getElementById('img5');
+										var image6 = document.getElementById('img6');
+										var image7 = document.getElementById('img7');
+										var image8 = document.getElementById('img8');
+										var image9 = document.getElementById('img9');
+
+										var caption = document.getElementById('caption');
+
+										//Adding logic 
+										if (image1.style.display == "block") 
+										{
+											image1.style.display = "none";
+											image2.style.display = "block";
+											caption.innerHTML = "Medical Technology";
+										}
+										else if (image2.style.display == "block")
+										{
+											image2.style.display = "none";
+											image3.style.display = "block";
+											caption.innerHTML = "Military Technology";
+										}
+										else if (image3.style.display == "block")
+										{
+											image3.style.display = "none";
+											image4.style.display = "block";
+											caption.innerHTML = "Information Technology";
+
+										}
+										else if (image4.style.display == "block")
+										{
+											image4.style.display = "none";
+											image5.style.display = "block";
+											caption.innerHTML = "Entertainment Technology";
+										}
+										else if (image5.style.display == "block")
+										{
+											image5.style.display = "none";
+											image6.style.display = "block";
+											caption.innerHTML = "Architecture Technology";
+										}
+										else if (image6.style.display == "block")
+										{
+											image6.style.display = "none";
+											image7.style.display = "block";
+											caption.innerHTML = "Educational Technology";
+										}
+										else if (image7.style.display == "block")
+										{
+											image7.style.display = "none";
+											image8.style.display = "block";
+											caption.innerHTML = "Productivity Technology";
+										}
+										else if (image8.style.display == "block")
+										{
+											image8.style.display = "none";
+											image9.style.display = "block";
+											caption.innerHTML = "Assistive Technology";
+										}
+										else if (image9.style.display == "block")
+										{
+											image9.style.display = "none";
+											image1.style.display = "block";
+											caption.innerHTML = "Communication Technology";
+										}
+									}
+								</script>
+
+								<p class="textstyle2">Technology is very broad. So, we cannot precisely say all the types of the technologies. But, some of the common types of technologies are as follows:</p>
+
+								<br>
+
+								<!-- Creating a div for communication technology -->
+								<div>
+									<h2 class="textstyle3">1) Communication Technology:</h2>
+
+									<!-- Creating a div for explanation of communication technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Communication technology is one of the most essential types of technology at this time. No matter how far we are from each other, we can easily communicate with anyone. And, it has been made possible by communication technologies. Communication technology has been with us for a very long time ago. From the early forms of communication technologies like writing or drawing on walls of the cave, smoke signals, use of symbols to the modern forms of communication technologies like the internet, satellite communications, cellular networks, emails, etc. Communication technologies have a great role in worldwide interconnection and globalization.</p>
+									</div>
+
+								</div>
+
+								<br>
+
+								<!-- Creating a div for medical technology -->
+								<div>
+									<h2 class="textstyle3">2) Medical Technology:</h2>
+
+									<!-- Creating a div for explanation of medical technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Medical technology is also one of the most essential types of technology. The need and demand for this technology are very high and growing. Medical technology includes the services, gadgets, and machines related to medical science which are all powered by technology. The main goal of this technology is to save the life, improve health quality and increase lifespan. Some of the examples of these technologies are the devices that monitor heartbeats, devices that provide assistance for respiration through ventilation or oxygen supplementation, X-ray machines, tube feedings, different kinds of surgeries methods and equipment, etc. Without this technology, human life would have been very harsh.</p>
+									</div>
+
+								</div>
+
+								<br>
+
+								<!-- Creating a div for military technology -->
+								<div>
+									<h2 class="textstyle3">3) Military Technology:</h2>
+									
+									<!-- Creating a div for explanation of military technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Military technology is one of the most recognized types of technology. And military technology is the use of devices, vehicles, equipment, etc fuelled by technology in warfare. Various warfare has caused military technology to innovate. In the early time, there was the use of only stone-based weapons but now it has developed to new heights. Some of the examples of modern technologies of the military are different firearms and equipment, armored vehicles, fortification, rocket and missile systems, nuclear warfare, biological warfare, chemical warfare, etc. Military technology is one of the most advanced technologies present in today's world.</p>	
+									</div>
+								</div>
+
+								<br>
+
+								<!-- Creating a div for information technology -->
+								<div>
+									<h2 class="textstyle3">4) Information Technology:</h2>
+									
+									<!-- Creating a div for explanation of information technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Information technology is another important type of technology. Information technology is a set of interconnected hardware and software which helps to collect data and information, store it and make it accessible using a certain set of instructions by the users who will use it. Some of the examples of an information system are automated backup systems to backup the files of selected or all drive or system, computers to process information, cloud computing, different software to store data and information in hardware, use of AI(Artificial Intelligence) for various purposes like decision making, etc. Information technology has lead to innovation and healthy competition.</p>
+									</div>
+
+								</div>
+
+								<br>
+
+								<!-- Creating a div for entertainment technology -->
+								<div>
+									<h2 class="textstyle3">5) Entertainment Technology:</h2>
+
+									<!-- Creating a div for explanation of entertainment technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Entertainment technology is the technology that makes use of gadgets and devices for entertainment. Entertainment technologies help people to enjoy and have a good time. Entertainment technologies are also innovating day today. In the past, music was limited to recording, and tapes and movies were limited to CDs. But, nowadays, they can be found easily on the internet. Likewise, video streaming, virtual reality games, and movies, e-sports, hologram technology, CGI(Computer-generated Imagery) technology, etc have brought a whole new level of innovation in entertainment technologies.
+									</div>
+								</div>
+
+								<br>
+
+
+								<!-- Creating a div for architecture technology -->
+								<div>
+									<h2 class="textstyle3">6) Architecture Technology:</h2>
+
+									<!-- Creating a div for explanation of architecture technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Architecture technology is one of the recognized types of technology. This applies modern technologies to design buildings ranging from small buildings to large industrial factories. Without architecture technologies, no building is going to stand long. Architecture technologies use the latest technology gadgets to ensure cutting-edge building designs with a solid foundation and beauty. Burj Khalifa which is the tallest building in the world, the Taj Mahal of India, Apple park which is the corporate headquarter of Apple Inc., etc can be the greatest example to illustrate the results of the architecture technology.</p>
+									</div>
+								</div>
+
+								<br>
+
+								<!-- Creating a div for educational technology -->
+								<div>
+									<h2 class="textstyle3">7) Educational Technology:</h2>
+
+									<!-- Creating a div for explanation of educational technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Educational technology is one of the essential types of technology. Educational technology is the use of technology processes and resources for learning environment and improving performance. Educational technology includes various gadgets as well as software and applications. Different types of educational technologies are used from white boards to presentations with projectors to online classes. The educational technologies are also innovating by developing interesting methods of learning and by creating and providing high-quality study materials.</p>
+									</div>
+								</div>
+
+								<br>
+
+								<!-- Creating a div for productivity technology -->
+								<div>
+									<h2 class="textstyle3">8) Productivity Technology:</h2>
+
+									<!-- Creating a div for explanation of productivity technology -->
+									<div class="margin_types">
+										<p class="textstyle2">Productivity technology is one of the important types of technology. This technology includes software, hardware, and systems that enable people to work more effectively and efficiently. Some examples of productive technology are computer software like database programs that can store and retrieve information easily, FAX and email to transmit written documents over long distances, word processing to edit any document easily, machines in factories, etc. This technology improves productivity by helping people in completing various tasks effectively and efficiently. </p>
+									</div>
+								</div>
+
+								<br>
+
+								<!-- Creating a div for assistive technoogy -->
+								<div>
+									<h2 class="textstyle3">9) Assistive Technology:</h2>
+
+									<!-- Creating a div for explanation of assistive technology -->
+									<div class="margin_types">
+										<p id="nav_positives" class="textstyle2">Assistive technology is the use of technology to assist people with disabilities (differently able) to perform a certain task. We all know that the life of people with disabilities is very extreme. And, assistive technology is for them. Assistive technology includes various types of services and devices to help differently able persons. Some of the examples of assistive technology are hearing aids, automated wheelchairs, communication aids, prosthetic devices, etc. And, all those assistive technologies can help differently able persons to be independent by making the environment more accessible for them. Likewise, they also can get the chance to compete with others with the help of assistive technologies. Assistive technologies ultimately improve the quality of life of differently able persons. </p>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+
+
+						<!-- Creating a div for positive impacts of technologies -->
+						<div class="box">
+							<h1 align="center" class="textstyle1"><u>Positive Impacts of Techonlogies</u></h1>		
+						
+							<!-- Creating a div for explanation of positive impact of technology -->	
+							<div class="margin_content">
+								<p class="textstyle2">We all are deeply connected with the techologies. And, the technologies has a lots of positive impacts and they are as follow:</p>
+
+								<!-- Creating a div for listing positive impacts of technology -->
+								<div class="textstyle2" style="margin-left: 20px; margin-top: 5px;">
+									<ul style="color: white;">
+
+										<li>
+										 	Technology has made our lives very easy and comforable because everything we use in our daily life from beds to smartphones is the gift of technology.
+										 </li>
+
+										<li> 
+											Virtual classes and e-learning are possible because of technology which has bring a huge development in the field of education.
+										</li>
+
+										<li> 
+											Because of the technologies, the things are getting cheaper and are being affordable of most of the people. 
+										</li>
+
+										<li id="nav_negatives">
+											Technology has helped to increase awareness of the things that are happening all over the world.
+										</li>
+
+										<li>
+											Technology like social media platform has help people to stay connected no matter where they are.
+										</li>
+
+										<li>
+											Technology has made humans more powerful, smarter, time-efficent and productive.
+										</li>
+										<li> 
+											Technology has increased meadical health care saving alot of lives and increasing the lifespan.
+										</li>
+
+										<li> 
+											Technologies are helping alot in researches because the appliances and resources for carrying out research are improving.
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="box">
+							<h1 align="center" class="textstyle1"><u>Negative Impacts of Techonlogies</u></h1>
+							
+							<!-- Creating a div for explanation of negative impact of technology -->
+							<div class="margin_content">
+
+								<p class="textstyle2">Everything comes with good and bad side. Likewise, technology not only has positive impacts, but, also have the negative impacts as well and they are as follow:</p>
+
+								<!-- Creating a div for listing negative impacts of technology -->
+								<div class="textstyle2" style="margin-left: 20px; margin-top: 5px;">
+									<ul style="color: white;">
+
+										<li> 
+											Technologies will cause the end of our privacy because many people share their personal information on the internet and also there are higher authorities, hackers, etc who are constantly monitoring us while we are using technology.
+										</li>
+
+										<li> 
+											Technologies like social media platforms were made to bring people together. But, those technologies have made people feel socially isolated.
+										</li>
+
+										<li>
+											Techologies is posing a great threat to whole man kind because of the increasing threats like nuclear warfare, biological warfare and chemical warfare. 
+										</li>
+
+										<li id="nav_verdicts"> 
+											Technologies have cause addiction problems in almost everyone. We are all addicted to our phones, games, etc.
+										</li>
+
+										<li> 
+											Technologies have made us more dependent and very lazy because for almost all work we are using technology.
+										</li>
+
+										<li> 
+											Technology has become the reason for health degradation. Psychological health effects like depression, anxiety, insomnia, etc, and physical effects like eye problems, cardio disease, etc are growing every day.
+										</li>
+
+										<li>
+											Cybercrime like a bully, fraud, cyber terrorism, stalking, hacking and cracking, identity thief, etc are increasing with the rise of technology.  
+										</li>
+
+										<li> 
+											Overuse of technology has caused an increase in harmful waste products which is increasing pollution every day. 
+										</li>
+	
+
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!-- Creating a div for overall verdict -->
+						<div class="box">
+							<h1 align="center" class="textstyle1"><u>Overall Verdict</u></h1>
+
+							<!-- Creating a div for explanation of overall verdit -->
+							<div class="margin_content">
+								<p class="textstyle2">At last, technology is simply the system of problem-solving and practical ideas or knowledge to create different gadgets and tools. And, those gadgets and tools are known as applied technology. With time, various types of technologies have been developed. And, we are connected with all those various types of technologies. Technology has become a neighborhood of our lifestyle. Everything has a good and a bad side. Likewise, technologies have both positive and negative impacts on us. Technology can help us in every sectors of development. But, technology has also the power to eradicate the whole mankind and the earth. And, its impact depends completely upon how we use it. So, we must ultilize the technologies for the benefit of mankind and the world. 
+								</p>
+							</div>
+								
+						</div>
+
+					</div>		
+					
+			</main>
+
+
+			<!--Footer content -->
+			<footer align="center">
+
+				<!-- Div for social medias connection -->
+				<div class="footer_background">
+					<h1>Connect With Me:</h1>
+					<a class="icons_image" href="https://www.facebook.com/venus.magar.99" target="_blank">
+						<img src="../images/fb.png" alt="FB Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.instagram.com/venus.magar/" target="_blank">
+						<img src="../images/ig.jpg" alt="IG Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.linkedin.com/in/venus-chhantel-8561981b8" target="_blank">
+						<img src="../images/linkedin.png" alt="LinkedIn Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="mailto:venusmagar@protonmail.com" target="_blank">
+						<img src="../images/mail.png" alt="Mail Link" width="40" height="40">
+					</a>
+				</div>
+
+				<!-- Div for copy right -->
+				<div class="copyright">
+					&copy; All Rights Reserved
+				</div>
+
+			</footer>
+			
+		</div>
+
+
+	</body>
+
+</html>

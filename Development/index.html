@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+	<head>
+		<title>Home</title>
+		<meta name="author" content="Venus Chhantel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</head>
+
+	<style>
+
+		/* Creating class for a text style */
+		.body_textstyle1{
+			color: white;
+			font-size: 30px;
+		}
+
+		/* Creating a class for a second text style */
+		.body_textstyle2{
+			color: white;
+			font-size: 20px;
+		}
+
+		/* Creating a class for a third text style */
+		.body_textstyle3{
+			color: white;
+			font-size: 17px;
+			text-align: ;
+		}
+
+		/* Creating a class for styling a part to divide it into identical child parts */
+		.parent{
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+		/* Creating a class for styling all the child parts */
+		.parent .child{
+			margin: 20px;
+			width: 350px;
+			border: 1px solid white;
+			padding: 15px 30px 10px 30px;
+		}
+
+		/* Creating a class for styling hover effects on social media icons */
+		.social_medias:hover{
+			filter: brightness(0.6);
+		}
+
+	</style>
+
+	<body onload="displayTime()">
+
+		<!-- Creating a wrapper -->
+		<div style="width: 100%">
+
+			<!-- Creating a header content -->
+			<header>
+
+				<!-- Div for logo -->
+				<div>
+					<img src="images/logo.png" alt="Logo" width=100, height="90">
+				</div>
+
+				<!-- Creating navigation bar -->
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="pages/page1.html">CV</a>
+						</li>
+						<li>
+							<a href="pages/page2.html">BLOG</a>
+						</li>
+						<li>
+							<a href="pages/page3.html">RESEARCH</a>
+						</li>
+						<li>
+							<a href="pages/page4.html">CONTACT</a>
+						</li>
+					</ul>		
+				</nav>
+
+			</header>
+
+
+			<!-- For allocating main content -->
+			<main>
+
+				<br>
+
+				<p id="time" align="right" style="margin-right: 10px;">Time</p>
+
+				<!-- Div for upper section-->
+				<div style="margin-top: 275px;">
+
+					<!-- Div for heading -->
+					<div>
+						<h1 class="body_textstyle1" align="center">
+		               		A STUDENT AND ALWAYS LEARNING...     
+		            	</h1>
+					</div>
+		            
+		            <br>
+
+		            <!-- Div for learn more button -->
+		            <div align="center">
+		            	<a class="button" href="#nav_down">Learn more</a>
+		            </div> 
+
+		        </div>
+
+		        <!-- Creating a horizontal line to get naviagated --> 
+		        <hr id="nav_down" style="margin-top: 500px;">
+
+				<!--Div for lower section -->
+				<div style="margin-top: 160px;">
+
+					<!-- Div for my image -->
+					<div align="center" >
+						<img  src="images/PP.png" alt="My Image" width="275" height="275">
+					</div>
+
+					<br>
+
+					<!-- Div for heading -->
+					<div align="center">
+						<h1 class="body_textstyle2">
+		                	HELLO!
+		            	</h1>
+					</div>
+
+					<br>
+
+					<!-- Div for my info and webpages description-->
+		            <div align="center">
+		            	<p class="body_textstyle3">
+			                I am 18 years old computer enthusiast. And the name goes by Venus.<br>
+			                Currently, I am studying Networking and IT Security at Islington College.<br>
+			                In this website, it contains following things:
+		            	</p>
+		            </div>
+
+		        </div>
+
+
+		        <!-- Div for description of the different webpages-->
+		        <div class="parent">
+
+		        	<!-- Div for CV  -->
+			        <div class="child">
+
+			        	<!-- Div for heading and description of CV -->
+			        	<div>
+			        		<h1 class="body_textstyle2">CV</h1>
+			        		<br>
+			        		<p class="body_textstyle3">This webpage contains my CV which includes my photo, short introduction with contact information, my educational background, my projects, my certificates, and my skills. You can check out my CV by visiting the webpage from the button below.</p>
+			        	</div>
+
+			        	<br>
+			        	<br>
+
+			        	<!-- Div for read more button -->
+			        	<div>
+			        		<a class="button" href="pages/page1.html">Read More</a>
+			        	</div>
+
+			        	<br>
+			        	<br>
+
+			        </div>
+
+			        <!-- Div for Blog -->
+			        <div class="child">
+
+			        	<!-- Div for heading and description of Blog -->
+			        	<div>
+			        		<h1 class="body_textstyle2">BLOG</h1>
+			        		<br>
+			        		<p class="body_textstyle3">This webpage includes blogs in which I had talked about different types of technologies and how those technologies are affecting us both positively and negatively. You can check out more about my blogs by visiting the webpage from the button below.</p>
+			        	</div>
+
+			        	<br>
+			        	<br>
+
+			        	<!-- Div for read more button -->
+			        	<div>
+			        		<a class="button" href="pages/page2.html">Read More</a>
+			        	</div>
+
+			        	<br>
+
+			        </div>
+
+			        <!-- Div for Research -->
+			        <div class="child">
+
+			        	<!-- Div for heading and description of Research -->
+			        	<div>
+			        		<h1 class="body_textstyle2">RESEARCH</h1>
+			        		<br>
+			        		<p class="body_textstyle3">This webpage contains my researches which includes comparison of the components of my website against the websites that are investigated for research purposes. You can check out more about my researches by visiting the webpage from the button below.</p>
+			        	</div>
+
+			        	<br>
+			        	<br>
+
+			        	<!-- Div for learn more button -->
+			        	<div>
+			        		<a class="button" href="pages/page3.html">Read More</a>
+			        	</div>
+
+			        	<br>
+
+			        </div>
+
+			        <!-- Div for Contact -->
+			        <div class="child">
+
+			        	<!-- Div for heading and description of Contact -->
+			        	<div>
+			        		<h1 class="body_textstyle2">CONTACT</h1>
+			        		<br>
+			        		<p class="body_textstyle3">This webpage contains the ways through you can contact with me like different social medias links and mail with a map location to find me. This webpage also contains a form so that you can contact with me. You can contact me by visiting the webpage from the button below.</p>
+			        	</div>
+
+			        	<br>
+			        	<br>
+
+			        	<!-- Div for read more button -->
+			        	<div>
+			        		<a class="button" href="pages/page4.html">Read More</a>
+			        	</div>
+
+			        	<br>
+
+			        </div>	
+
+		        </div>
+
+			</main>	
+
+	
+
+			<!--Footer content -->
+			<footer align="center">
+
+				<!-- Div for social medias connection -->
+				<div class="footer_background">
+					<h1>Connect With Me:</h1>
+					<a class="icons_image" href="https://www.facebook.com/venus.magar.99" target="_blank">
+						<img src="images/fb.png" alt="FB Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.instagram.com/venus.magar/" target="_blank">
+						<img src="images/ig.jpg" alt="IG Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.linkedin.com/in/venus-chhantel-8561981b8" target="_blank">
+						<img src="images/linkedin.png" alt="LinkedIn Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="mailto:venusmagar@protonmail.com" target="_blank">
+						<img src="images/mail.png" alt="Mail Link" width="40" height="40">
+					</a>
+				</div>
+
+				<!-- Div for copy right -->
+				<div class="copyright">
+					&copy; All Rights Reserved
+				</div>
+
+			</footer>
+
+		</div>
+
+	</body>
+	
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+	<head>
+		<title>CV</title>
+		<meta name="author" content="Venus Chhantel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script type="text/javascript" src="../js/script.js"></script>
+	</head>
+
+	<style>
+		/* Creating a class for styling the top part for my image, my introduction and contact information */  
+		.top_part{
+			margin-top: 37px;
+			margin-bottom: 15px;
+			display: flex;
+		}
+
+		/* Creating a class for a text style */
+		.textstyle1{
+			color: white;
+			font-size: 17px;
+		}
+
+		/* Creating a class for a second style */
+		.textstyle2{
+			color: white;
+			font-size: 20px;
+		}
+
+		/* Styling table header */
+		th{
+			color: white;
+			font-size: 18px;
+		}
+
+		/* Styling table data */
+		td{
+			color: white;
+			font-size: 17px;
+		}
+
+		/* Styling for skills to show hard and soft skills */
+		.skills{
+			display: flex;
+		}
+
+		/* Styling for hard skills and soft skills */
+		.skills_child{ 
+			padding: 10px 40px 10px 30px; 
+			border: 1px solid white;
+		}
+
+	</style>
+
+	<body onload="displayTime()">
+
+		<!-- Creating a wrapper -->
+		<div style="width: 100%">
+			
+			<!-- Creating a header content -->
+			<header>
+
+				<!-- Div for logo -->
+				<div>
+					<img src="../images/logo.png" alt="Logo" width=100, height="90">
+				</div>
+
+				<!-- Creating navigation bar -->
+				<nav>
+					<ul>
+						<li>
+							<a href="../index.html">HOME</a>
+						</li>
+						<li>
+							<a href="../pages/page1.html">CV</a>
+						</li>
+						<li>
+							<a href="../pages/page2.html">BLOG</a>
+						</li>
+						<li>
+							<a href="../pages/page3.html">RESEARCH</a>
+						</li>
+						<li>
+							<a href="../pages/page4.html">CONTACT</a>
+						</li>
+					</ul>		
+				</nav>
+
+			</header>
+
+			<!-- For allocating the main content -->
+			<main >
+
+				<!-- Creating a div for main body to divide into 2 sections -->
+				<div class="body">
+
+					<!-- Div for side navigation section -->
+					<div class="side_nav">
+
+						<p id="time" align="center">Time</p>
+
+						<h1 align="center">JUMP TO:</h1>
+
+						<!-- Creating a div for side navigation -->
+						<div align="center">
+							<nav>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 31px; padding-right: 31px;" href="#">INTRODUCTION</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 46px; padding-right: 46px;" href="#nav_education">EDUCATION</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 47px; padding-right: 47px;" href="#nav_project"> MY PROJECT</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 51px; padding-right: 51px;" href="#nav_skill">MY SKILLS</a>
+								</div>
+
+								<div style="margin-top: 80px;">
+									<a class="side_button" style="padding-left: 31px; padding-right: 31px;" href="#nav_certificate">CERTIFICATION</a>
+								</div>
+
+							</nav>
+			
+						</div>
+					</div>
+
+
+					<!-- Creating a div for main body content -->
+					<div style=" width: 100%; height: 2410px; border-left: 1px solid white;">
+
+						
+						<div class="top_part">
+					
+							<!-- Creating a div for image -->
+							<div style="padding-left: 30px; ">
+								<img src="../images/PP.png" alt="My image" height="250px" width="250px">
+							</div>
+
+							<!-- Creating a div for my intro and contact info -->
+
+							<div align="left" style="margin: 20px; padding: 20px 40px 10px 40px;">
+								
+								<p class="textstyle1">My name is Venus Chhantel and I am 18 years old computer enthusiast. Currently, I am studing Networking and IT Security at Islington College situated in Kathmandu, Nepal. My target for now is to pass CCNA and OSCP certification exams.</p>
+								
+
+								<!-- For creating a horizontal line -->
+								<hr style="color: white; margin-top: 30px; margin-bottom: 30px;">
+
+								<p class="textstyle1" align="center" id="nav_education">Feel free to contact me. I'd love to hear from you.</p> 
+								
+								<br>
+
+								<!-- Creating a div for contact me icons -->
+								<div align="center">
+									<a class="icons_image" href="https://www.facebook.com/venus.magar.99" target="_blank">
+										<img src="../images/fb.png" alt="FB Link" width="40" height="40">
+									</a>
+									<a class="icons_image" href="https://www.instagram.com/venus.magar/" target="_blank">
+										<img src="../images/ig.jpg" alt="IG Link" width="40" height="40">
+									</a>
+									<a class="icons_image" href="https://www.linkedin.com/in/venus-chhantel-8561981b8" target="_blank">
+										<img src="../images/linkedin.png" alt="LinkedIn Link" width="40" height="40">
+									</a>
+									<a class="icons_image" href="mailto:venusmagar@protonmail.com" target="_blank">
+										<img src="../images/mail.png" alt="Mail Link" width="40" height="40">
+									</a>
+								</div>
+
+							</div>
+			
+						</div>
+
+
+						<!-- Creating a horizontal line -->
+						<hr style="color: white; margin-bottom: 35px;" width="95%">
+
+						<div>
+
+							<!--Creating a div for educational background -->
+							<div class="box">
+
+								<h1 class="textstyle2" align="center"><u>Educational Background</u></h1>
+								
+								<br>
+								
+								<!-- Creating a div for table section -->
+								<div style="margin-top: 5px; padding-bottom: 5px;">
+									<table border="2px", width="95%" id="nav_project">
+										
+										<tr>
+											<th>Level</th>
+											<th>School/College</th>
+											<th>GPA</th>
+											<th>Year(In A.D.)</th>
+										</tr>
+
+										<tr align="center">
+											<td>SEE</td>
+											<td>KIMS</td>
+											<td>3.75</td>
+											<td>2017</td>
+										</tr>
+
+										<tr align="center">
+											<td>+2</td>
+											<td>NIST</td>
+											<td>3.57</td>
+											<td>2020</td>
+										</tr>
+
+										<tr align="center">
+											<td>Bachlors</td>
+											<td>Islington College</td>
+											<td>N/A</td>
+											<td>Running</td>
+										</tr>
+
+									</table>
+
+								</div>
+
+							</div>
+
+
+							<!-- Creating a div for my projects -->
+							<div class="box">
+								<h1 class="textstyle2" align="center"><u>My Project</u></h1>
+								<br>
+			             
+								<!-- Creating a div for description of my project -->
+								<div>
+									<p class="textstyle1">I had worked on a small fun project of mine. In this project, I had developed a game for andriod named "Abyss". This project was created using Godot Game Engine which use GD Script. All the sprites and animation were made using Aseprite. This game core idea was based on flappy bird. But, I tried to make it creepy as possible by adding different elements. You can check out the video below:</p>	
+								</div>
+
+								<br>
+								
+								<!-- Creating a div for youtube video link of my project -->
+								<div align="center" >
+									<iframe width="500" height="500" style="border: 1px solid white;" 
+										src="https://www.youtube.com/embed/YHvAIp6PDuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+									</iframe>
+						
+								</div>
+
+								<br>
+
+								<!-- Creating a div for link for my project to download -->
+								<div align="center">
+									<p class="textstyle1" id="nav_skill">You can download this project game and play by yourself by clicking the download button below:</p>
+
+									<br>
+									<br>
+
+									<!-- Div for the Download button -->
+									<div>
+										<a  class="button" href="https://www.mediafire.com/download/9d5rokg5jg1d6l8" target="_blank">Download</a>
+									</div>
+
+								</div>
+								<br>
+
+							</div>
+
+							<br>
+
+							<!-- Creating a div for my skills -->
+							<div class="box">
+								<h1 class="textstyle2" align="center"><u>My Skills</u></h1>
+								<br>
+								<br>
+
+								<!-- Creating a div that contain programming, software and soft skills -->
+								<div class="skills" id="nav_certificate">
+
+									<!-- Creating a div for scripting and programming skills -->
+									<div class="skills_child">
+										<h2 class="textstyle1" align="center"><u>Scripting & Programming:</u></h2>
+										<br> 
+
+										<!-- Creating a div to list scripting and programming skills -->
+										<div class="textstyle1" style="padding-left: 20px;">
+											<li>C programming</li>
+											<li>GDScript</li>
+											<li>Java</li>
+											<li>Html</li>
+											<li>CSS</li>
+											<li>JavaScript</li>
+											<li>MySQL</li>
+										</div>
+										<br>
+									</div>
+
+
+
+									<!-- Creating a div for hard skills -->
+									<div class="skills_child">
+										<h2 class="textstyle1" align="center"><u>Graphic, Video & Game Software:</u></h2>
+										<br> 
+
+										<!-- Creating a div to list hard skills -->
+										<div class="textstyle1" style="padding-left: 10px;">
+											<li>Photoshop</li>
+											<li>Godot</li>
+											<li>Aseprite</li>
+											<li>Premiere</li>
+											<li>Blender</li>
+											<li>Sketch</li>
+											<li>Unity</li>
+										</div>
+										<br>
+									</div>
+
+
+
+									<!-- Creating a div for soft skills -->
+									<div class="skills_child">
+										<h2 class="textstyle1" align="center"><u>Soft Skills:</u></h2>
+										<br>
+
+										<!-- Creating a div to list soft skills -->
+										<div class="textstyle1" style="padding-left: 20px;">
+											<li>Time management</li>
+											<li>Critical thinking</li>
+											<li>Problem-solving</li>
+											<li>Effective communication</li>
+											<li>Teamwork skills</li>
+											<li>Adaptability</li>
+											<li>Productive</li>
+										</div>
+										<br>
+
+									</div>
+
+								</div>
+								<br>
+
+							</div>
+
+							<br>
+
+							<!-- Creating a div for certifications -->
+							<div class="box">
+								<h1 class="textstyle2" align="center"><u>Certification</u></h1>
+
+								<br>
+
+								<!-- Creating a div for image of Uxcel certificate image -->
+								<div align="center">
+									<img src="../images/UxcelCertificate.png" alt="Uxcel Certificate" width="700px" height="400px">
+									<h2 class="textstyle1">UX/UI Design Foundation</h2>
+								</div>
+
+								<br>
+							</div>
+						</div>
+
+					</div>
+				
+				
+
+			</main>
+
+			<!--Footer content -->
+			<footer align="center">
+
+				<!-- Div for social medias connection -->
+				<div class="footer_background">
+					<h1>Connect With Me:</h1>
+					<a class="icons_image" href="https://www.facebook.com/venus.magar.99" target="_blank">
+						<img src="../images/fb.png" alt="FB Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.instagram.com/venus.magar/" target="_blank">
+						<img src="../images/ig.jpg" alt="IG Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.linkedin.com/in/venus-chhantel-8561981b8" target="_blank">
+						<img src="../images/linkedin.png" alt="LinkedIn Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="mailto:venusmagar@protonmail.com" target="_blank">
+						<img src="../images/mail.png" alt="Mail Link" width="40" height="40">
+					</a>
+				</div>
+
+				<!-- Div for copy right -->
+				<div class="copyright">
+					&copy; All Rights Reserved
+				</div>
+
+			</footer>
+			
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<title>Contact</title>
+		<meta name="author" content="Venus Chhantel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script type="text/javascript" src="../js/script.js"></script>
+
+	</head>
+
+	<style>
+		/* Creating a class for a text style */
+		.textstyle1{
+			font-size: 18px;
+			color: white;
+		}
+
+		/* Creating a class for another text style */
+		.textstyle2{
+			font-size: 17px;
+			color: white;
+		}
+
+		/* Creating a class for styling the form box */
+		.form_box{
+			margin: 40px 90px 20px 90px;
+			border: 2px solid white;
+		}
+
+		/* Styling label of the form */
+		label{
+			color: white;
+			font-size: 17px;
+		}
+
+		/* Styling input and textarea of the form */
+		input, textarea{
+			font-size: 17px;
+			color: white;
+		}
+
+	</style>
+
+	<body onload="displayTime()">
+
+		<!-- Creating a wrappper -->
+		<div width=100%>
+			
+			<!-- Creating a header content -->
+			<header>
+
+				<!-- Div for logo -->
+				<div>
+					<img src="../images/logo.png" alt="Logo" width=100, height="90">
+				</div>
+
+				<!-- Creating navigation bar -->
+				<nav>
+					<ul>
+						<li>
+							<a href="../index.html">HOME</a>
+						</li>
+						<li>
+							<a href="../pages/page1.html">CV</a>
+						</li>
+						<li>
+							<a href="../pages/page2.html">BLOG</a>
+						</li>
+						<li>
+							<a href="../pages/page3.html">RESEARCH</a>
+						</li>
+						<li>
+							<a href="../pages/page4.html">CONTACT</a>
+						</li>
+					</ul>
+
+				</nav>
+
+			</header>
+
+			<!-- For allocating the main content -->
+			<main>
+
+				<!-- Creating a div for main body to divide into 2 sections -->
+				<div class="body">
+
+					<!-- Creaying a div for contact us form -->
+					<div style=" width: 90%;">
+
+						<div class="form_box">
+
+							<!-- Creating a div for heading -->
+							<div align="center" style="padding: 20px;">
+								<h1 class="textstyle1">CONTACT US</h1>
+							</div>
+							
+							<!-- Creating a horizontal line -->
+							<hr>
+
+							<!-- Creating a div for form-->
+							<div style="margin-left: 133px; margin-top: 30px;">
+								
+								<!-- Using form tag to create form -->
+								<form class="form" name="formMessage" onsubmit="formValidation()">
+
+									<ul style="list-style-type: none;">
+										<li>
+											<label>First Name:</label>
+											<input type="text" name="firstName">
+										</li>
+
+										<br>
+
+										<li>
+											<label>Last Name:</label>
+											<input type="text" name="lastName">
+										</li>
+
+										<br>
+
+										<li>
+											<label>Age:</label>
+											<input type="number" name="age">
+										</li>
+
+										<br>
+
+										<li>
+											<label>Gender:
+											<br>
+											<input type="radio" name="gender" value="male" checked=""> Male
+											<input type="radio" name="gender" value="female"> Female
+											<input type="radio" name="gender" value="other"> Other
+											</label>
+										</li>
+
+										<br>
+
+										<li>
+											<label>Phone no.:</label>
+											<input type="text" name="phoneNo">
+										</li>
+
+										<br>
+
+										<li>
+											<label>Email:</label>
+											<input type="text" name="email" placeholder="name@domain">
+										</li>
+
+										<br>
+
+										<li>
+
+											<label>Message:</label>
+											<br>
+											<textarea name="message" rows="11" cols="38" placeholder="Enter Your Message"></textarea>
+										</li>
+
+										<br>
+
+										<li>
+											<div style="margin-left: 30%">
+												<input class="button" type="submit" value="Submit">
+											</div>	
+										</li>
+
+									</ul>
+									<br>	
+								</form>
+
+							</div>
+
+							<!-- Adding logic in contact form using javascript -->
+							<script type="text/javascript">
+								function formValidation()
+								{
+									//Initialization
+									var firstName = document.forms["formMessage"]["firstName"].value;
+									var lastName = document.forms["formMessage"]["lastName"].value;
+									var age = document.forms["formMessage"]["age"].value;
+									var gender = document.forms["formMessage"]["gender"].value;
+									var phoneNo = document.forms["formMessage"]["phoneNo"].value;
+									var email = document.forms["formMessage"]["email"].value;
+									var message = document.forms["formMessage"]["message"].value;
+
+									//Logic part 
+									//Displaying logic if any parameter is empty
+									if (firstName == "" || lastName == "" || age == "" || phoneNo == "" || email == "" || message == "") 
+									{
+										alert("Empty field(s) are found. Please fill the form again correctly.")
+									}
+									//Displaying logic if age is less than equal to 0 or more than 100
+									else if (age <= 0 || age >= 100) 
+									{
+										alert("Age is invalid. Please fill the form again correctly.")
+									}
+									//Displaying logic if parameter are correct 
+									else
+									{
+										alert("Your feedbacks are very valuable. Thank you for your feedbacks.")
+									}
+								}
+							</script>
+
+						</div>
+	
+					</div>
+
+
+					<!-- Creating a div for social media and location -->
+					<div style="height: 50px; width: 100%;">
+
+						<br>
+
+						<p id="time" align="right" style="margin-right: 10px;">Time</p>
+
+						<div style="margin-top: 50px;">
+							<p align="center" class="textstyle2">I am available in most of the social media platform. Feel free to contact me.</p>
+						</div>
+
+						<br>
+
+						<!-- Creating a div for contact me icons -->
+						<div align="center">
+							<a class="icons_image" href="https://www.facebook.com/venus.magar.99" target="_blank">
+								<img src="../images/fb.png" alt="FB Link" width="40" height="40">
+							</a>
+							<a class="icons_image" href="https://www.instagram.com/venus.magar/" target="_blank">
+								<img src="../images/ig.jpg" alt="IG Link" width="40" height="40">
+							</a>
+							<a class="icons_image" href="https://www.linkedin.com/in/venus-chhantel-8561981b8" target="_blank">
+								<img src="../images/linkedin.png" alt="LinkedIn Link" width="40" height="40">
+							</a>
+							<a class="icons_image" href="mailto:venusmagar@protonmail.com" target="_blank">
+								<img src="../images/mail.png" alt="Mail Link" width="40" height="40">
+							</a>
+						</div>
+						
+						<br>
+						<!-- Creating a horizontal line -->
+						<hr width="85%">
+						<br>
+
+
+						<!-- Creating a div for a heading -->
+						<div align="center" style="margin-top: 30px;">
+							<h1 class="textstyle1">You Can Find Me Here:</h1>
+						</div>
+
+						
+						<!-- Creating a div for map image which link to the location to find me -->
+						<div align="center" style="margin-top: 10px;">
+							<a href="https://www.google.com/maps/place/Islington+College/@27.7087094,85.3258635,19.25z/data=!4m5!3m4!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!8m2!3d27.7087242!4d85.3260543" target="_blank">
+								<img class="icons_image" style="border: 2px solid #ff7a7a;" src="../images/location.png" alt="Location To Find Me" height="450px" width="750px">
+							</a>
+						</div>
+
+					</div>	
+	
+			</main>
+
+			<br>
+
+			<!--Footer content -->
+			<footer align="center">
+
+				<!-- Div for social medias connection -->
+				<div class="footer_background">
+					<h1>Connect With Me:</h1>
+					<a class="icons_image" href="https://www.facebook.com/venus.magar.99" target="_blank">
+						<img src="../images/fb.png" alt="FB Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.instagram.com/venus.magar/" target="_blank">
+						<img src="../images/ig.jpg" alt="IG Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="https://www.linkedin.com/in/venus-chhantel-8561981b8" target="_blank">
+						<img src="../images/linkedin.png" alt="LinkedIn Link" width="40" height="40">
+					</a>
+					<a class="icons_image" href="mailto:venusmagar@protonmail.com" target="_blank">
+						<img src="../images/mail.png" alt="Mail Link" width="40" height="40">
+					</a>
+				</div>
+
+				<!-- Div for copy right -->
+				<div class="copyright">
+					&copy; All Rights Reserved
+				</div>
+
+			</footer>
+			
+		</div>
+
+
+	</body>
+
+</html>
